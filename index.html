@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/images.png">
+    <link rel="stylesheet" href="style.css">
+    <title>BIM Rechner</title>
+</head>
+<body>
+    <main>
+        <h1>Body-Mass-Index Rechner (BMI)</h1>
+        <article>
+            <h3>Was ist der BMI und wie wird er berechnet?</h3>
+            <p>Der Body Mass Index (BMI) setzt Gewicht und Körpergröße ins Verhältnis. Die Formel, die dahinter liegt, setzt das Körpergewicht in Kilogramm mit der Körpergröße in Metern zum Quadrat ins Verhältnis: BMI-Formel = Körpergewicht (in kg ) geteilt durch Körpergröße (in m ) zum Quadrat.</p>
+        </article>
+        <section class="rechner">
+            <div class="img"></div>
+
+            <form action="javascript:run()">
+                <h2>Jetzt den BMI berechnen</h2>
+    
+                <label for="bodyHeight ">Körpergröße (cm)</label>
+                <input type="number" id="bodyHeight" min="0" step="0.01" required>
+    
+                <label for="bodyWeight">Körpergewicht (kg)</label>
+                <input type="number" id="bodyWeight" min="0" step="0.01" required>
+    
+                <button type="submit"> Berechnen</button> 
+                <p id="ausgabe"></p>
+            </form>
+
+            <div class="img"></div>
+        </section>
+
+        <section class="box">
+            <h3>BMI-Tabelle</h3>
+            <p>Auf dieser Seite erhalten Sie eine Übersicht verschiedener Tabellen zu der Einordnung des BMI. Um den eigenen BMI zu ermitteln, benutzen Sie den BMI-Rechner.</p>
+            <section class="box1">
+                <div class="table1">
+                    <h2>BMI-Tabelle für erwachsene Männer</h2>
+                    <table class="men">
+                        <tr>
+                            <th>Alter</th>
+                            <th>Normalbereich dse BMI</th>
+                            <th>Idealer BMI</th>
+                        </tr>
+                        <tr>
+                            <td>19 - 24</td>
+                            <td>18,5 - 24,9</td>
+                            <td>21,75</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 34</td>
+                            <td>19,5 - 25,9</td>
+                            <td>22,75</td>
+                        </tr>
+                        <tr>
+                            <td>35 - 44</td>
+                            <td>20,5 - 26,9</td>
+                            <td>23,75</td>
+                        </tr>
+                        <tr>
+                            <td>45 - 54</td>
+                            <td>21,5 - 27,9</td>
+                            <td>24,75</td>
+                        </tr>
+                        <tr>
+                            <td>55 - 64</td>
+                            <td>22,5 - 28,9</td>
+                            <td>25,75</td>
+                        </tr>
+                        <tr>
+                            <td> >= 65</td>
+                            <td>23,5 - 29,9</td>
+                            <td>26,75</td>
+                        </tr>
+    
+                    </table>
+                </div>    
+                <div class="table2">
+                    <h2>BMI-Tabelle für erwachsene Frauen</h2>
+                    <table class="women">
+                        <tr>
+                            <th>Alter</th>
+                            <th>Normalbereich dse BMI</th>
+                            <th>Idealer BMI</th>
+                        </tr>
+                        <tr>
+                            <td>19 - 24</td>
+                            <td>17,5 - 23,9</td>
+                            <td>20,75</td>
+                        </tr>
+                        <tr>
+                            <td>25 - 34</td>
+                            <td>18,5 - 24,9</td>
+                            <td>21,75</td>
+                        </tr>
+                        <tr>
+                            <td>35 - 44</td>
+                            <td>19,5 - 25,9</td>
+                            <td>22,75</td>
+                        </tr>
+                        <tr>
+                            <td>45 - 54</td>
+                            <td>20,5 - 26,9</td>
+                            <td>23,75</td>
+                        </tr>
+                        <tr>
+                            <td>55 - 64</td>
+                            <td>21,5 - 27,9</td>
+                            <td>24,75</td>
+                        </tr>
+                        <tr>
+                            <td> >= 65</td>
+                            <td>22,5 - 28,9</td>
+                            <td>25,75</td>
+                        </tr>
+                    </table>
+                </div>
+            </section>
+        </section>
+
+       
+
+        
+
+    </main>
+
+   <script src="script.js"></script> 
+</body>
+</html>

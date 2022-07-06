@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Mingzat&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+main {
+    margin: 0 20%;
+    font-family:'Mingzat', Arial, Helvetica, sans-serif;
+
+}
+h1 {
+    font-weight: normal;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.874);
+    background-color: #579473;
+    padding: 1rem;
+}
+article h3 {
+    font-weight: normal;
+    font-size: 2rem;
+    margin-top: 20px;
+}
+article p {
+    font-size: 1.2rem;
+}
+
+.rechner {
+    display: flex;
+    justify-content: space-around;
+}
+.img {
+    width: 100%;
+    background: url(https://www.creativefabrica.com/wp-content/uploads/2019/03/Leaf-icon-by-rohmahrohmat1-7-580x386.jpg) center no-repeat;
+    background-size: cover;
+    background-position-y: center;
+    opacity: 0.7; 
+}
+
+form {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form h2 {
+    color: #316248;
+}
+
+input {
+    width: 350px;
+    margin-bottom: 20px;
+    padding: 0.5rem;
+    border: 1px solid;
+    border-radius: 10px;
+    font-size: 1rem;
+}
+input:focus {
+    outline: none;
+    border-color: rgb(5, 127, 5);
+}
+
+button {
+    width: 200px;
+    line-height: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color:#4e9770ab;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+button:hover {
+    background-color:#4e9770;
+    color: rgba(236, 236, 236, 0.849);
+}
+form p {
+    width: 200px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 2rem;
+    border: 1px solid #20402f;
+    border-radius: 25px;
+}
+
+
+
+
+
+.box {
+    background-color: #4e97702a;
+    margin-top: 20px;
+    padding: 30px;
+    font-size: 1.2rem;
+    border-radius: 25px;
+}
+.box1{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding: 20px;
+}
+.box1 h2 {
+    color:#20402f;
+    text-decoration: underline;
+}
+.table1 {
+    width: 50%;
+}
+.table2 {
+    width: 50%;
+}
+table {
+    width: 90%;
+    border: 1px solid;
+    border-collapse: collapse;
+}
+th, td {
+    border: 1px solid;
+}
+
+.table1, .table2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.table1 h2, .table2 h2 {
+    font-weight: normal;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+
+
+
+
+@media screen and (max-width: 900px) {
+    main {
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size:1.2rem;
+    }
+    article h3 {
+        font-size: 1rem;
+        font-weight: bold;
+        margin: 2rem 0 ;
+    }
+    main p {
+        font-size: 0.9rem;
+    }
+    .img {
+        display: none;
+    }  
+
+    .box1 {  
+        display: flex;
+        flex-direction: column;
+    }
+    .box1 h2 {
+        font-size: 1rem;
+        text-decoration: none;
+        line-height: 25px;
+    }
+    table {
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    .table1 {
+        width: 100%;
+    }
+    .table2 {
+        width: 100%;
+    }
+    th {
+        font-size: 0.7rem;
+    }
+
+}
+
+@media screen and (max-width: 1700px) {
+
+    .box1 {  
+        display: flex;
+        flex-direction: column;
+    }
+    .table1 {
+        width: 100%;
+    }
+    .table2 {
+        width: 100%;
+    }
+}
+
